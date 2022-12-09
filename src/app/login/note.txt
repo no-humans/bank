@@ -1,0 +1,57 @@
+data binding in angular
+------------------------
+
+ts-component
+html-view
+
+1-one way binding
+    1.1 component to view
+------------------------------
+
+    1.1.1 string interpollation {{}}
+    1.1.2 property binding      [property]="value"
+
+    1.2 view to component
+    --------------------------
+    1.2.1 event binding     (eventname)="method name()" 
+    1.2.2 event binding using $event        (event name)="methodname($event)"
+    1.2.3 event binding using template rendering variable  #variable
+
+
+2. Two way binding  
+........................
+
+
+        2.1 ngmodel     [(ngmodel)]="value"
+                         FormsModule   
+
+Redirection in angular
+-----------------------
+
+navigateByUrl  -method used to redirection
+Router         - class
+AppRoutingModule    -module
+
+
+Dependancy injection
+----------------------
+- to use a method of class in another class
+- in constructor
+
+-steps          access specifier- public/private
+                variable
+                class name
+                            private variable:Classname
+
+
+Angular Services
+------------------
+
+ng g s servicename
+
+
+Angular directives
+--------------------
+1-structural directives  : to handle structured data in view of a component 
+
+-ngFor     :can directly apply in html to access element from array

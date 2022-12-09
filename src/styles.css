@@ -1,0 +1,9 @@
+body{
+    background-image: url(./assets/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-size: cover;
+    width:100%;
+}
+
+@media (max-width:1000px){
+
+}

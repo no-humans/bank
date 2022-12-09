@@ -1,0 +1,42 @@
+<h1 class="text-warning p-4">welcome <span>{{user}}</span></h1>
+<div>
+    <a style="background-color: rgba(51, 53, 53, 0.5); border-radius:25px" class="text-decoration-none text-light p-4"  routerLink="/transaction">view transaction history</a>
+
+</div>  <div class="main">
+    <div class=" container w-25  mt-5 p-3 rounded" style="background: bg-transparent ;">
+        <h1 class="text-center text-light">Withdraw</h1>
+        <form (ngSubmit)="withdraw()">
+
+            <div class="mt-2 p-2 text text-warning"> Account number<input id="acwid" name="acno1" [(ngModel)]="ac1" 
+                    type="text" class="form-control" placeholder="Enter your account number"></div>
+
+            <div class="mt-2 p-2 text text-warning">password <input id="pid" name="psw1" [(ngModel)]="ps1"
+                    type="password" class="form-control" placeholder="Enter a valid password"></div>
+
+                    <div class="mt-2 p-2 text text-warning"> amount<input id="amwid" name="amount1" [(ngModel)]="am1"
+                         type="text" class="form-control" placeholder="Enter your user name"></div>
+
+            <div class=" mt-2 p-2 text-center"><button type="submit" 
+                    class="btn btn-outline-warning">Withdraw</button></div>
+        </form>
+    </div>
+</div>
+<div class="main">
+    <div class=" container w-25  mt-5 p-3 rounded" style="background: bg-transparent ;">
+        <h1 class="text-center text-light">Deposit</h1>
+        <form (ngSubmit)="deposit()">
+
+            <div class="mt-2 p-2 text text-warning"> Account number<input id="acdid" name="acno" [(ngModel)]="acno"
+                    type="text" class="form-control" placeholder="Enter your account number"></div>
+
+            <div class="mt-2 p-2 text text-warning">password <input id="pidd" name="password" [(ngModel)]="psw"
+                    type="password" class="form-control" placeholder="Enter a valid password"></div>
+
+                    <div class="mt-2 p-2 text text-warning"> amount<input id="umdid" name="amount" [(ngModel)]="amnt" 
+                         type="text" class="form-control" placeholder="Enter your user name"></div>
+
+            <div class=" mt-2 p-2 text-center"><button type="submit" 
+                    class="btn btn-outline-warning">Deposit</button></div>
+        </form>
+    </div>
+</div>

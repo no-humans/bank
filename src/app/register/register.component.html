@@ -1,0 +1,18 @@
+<div class="main">
+    <div class=" container w-25  mt-5 p-3 rounded" style="background: bg-transparent ;">
+        <h1 class="text-center text-light">Registration page</h1>
+        <form action="">
+            <div class="mt-2 p-2 text text-warning"> User name<input id="unid" name="uname" 
+                   [(ngModel)]="uname" type="text" class="form-control" placeholder="Enter your user name"></div>
+
+            <div class="mt-2 p-2 text text-warning"> Account number<input id="acid" name="acno" [(ngModel)]="acno"
+                    type="text" class="form-control" placeholder="Enter your account number"></div>
+
+            <div class="mt-2 p-2 text text-warning">password <input id="pid" name="psw" [(ngModel)]="psw"
+                    type="password" class="form-control" placeholder="Enter a valid password"></div>
+
+            <div class=" mt-2 p-2 text-center"><button type="submit" (click)="register()"
+                    class="btn btn-outline-warning">Register</button></div>
+        </form>
+    </div>
+</div>
